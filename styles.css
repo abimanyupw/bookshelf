@@ -10,7 +10,7 @@ body{
 
 
 header{
-    background-color:blue;
+    background-color:rgb(240, 0, 0);
     color: white;
     padding: 20px;
     text-align: center; 
@@ -34,7 +34,7 @@ main {
 
 .inputbook h2 {
     text-align: center;
-    color: blue;
+    color: rgb(240, 0, 0);
 }
 
 .inputbook form .input {
@@ -42,7 +42,7 @@ main {
 }
 
 .inputbook form button {
-    background-color: blue;
+    background-color: rgb(240, 0, 0);
     color: white;
     border: 0;
     border-radius: 5px;
@@ -64,7 +64,7 @@ main {
 }
 
 .inputbook form  .input  label {
-    color: blue;
+    color: rgb(240, 0, 0);
     font-weight: bold;
 }
 
@@ -75,7 +75,7 @@ main {
 }
 
 .input_section > form > .input_inline > label {
-    color: blue;
+    color: rgb(240, 0, 0);
     font-weight: bold;
     margin-right: 10px;
 }
@@ -92,7 +92,7 @@ main {
 }
 
 .search_section > h2 {
-    color: blue;
+    color: rgb(240, 0, 0);
 }
 
 .search_section > form {
@@ -114,7 +114,7 @@ main {
 }
 
 .search_section > form > button {
-    background-color: blue;
+    background-color: rgb(240, 0, 0);
     color: white;
     border: 0;
     border-radius: 5px;
@@ -130,7 +130,7 @@ main {
 }
 
 .book_shelf  h2 {
-    color: blue;
+    color: rgb(240, 0, 0);
 }
 
 .book_shelf  .book_list {
