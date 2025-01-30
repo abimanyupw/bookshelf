@@ -1,0 +1,172 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+header{
+    background-color:blue;
+    color: white;
+    padding: 20px;
+    text-align: center; 
+}
+
+main {
+    max-width: 800px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 16px;
+
+}
+.inputbook{
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(166, 167, 168);
+}
+
+.inputbook h2 {
+    text-align: center;
+    color: blue;
+}
+
+.inputbook form .input {
+    margin: 8px 0;
+}
+
+.inputbook form button {
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.inputbook form  button  span {
+    font-weight: bold;
+}
+
+.inputbook form  .input  input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.inputbook form  .input  label {
+    color: blue;
+    font-weight: bold;
+}
+
+.inputbook form  .input_inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input_section > form > .input_inline > label {
+    color: blue;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.search_section {
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(166, 167, 168);
+}
+
+.search_section > h2 {
+    color: blue;
+}
+
+.search_section > form {
+    padding: 16px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search_section > form > label {
+    display: flex;
+    align-items: center;
+}
+
+.search_section > form > input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search_section > form > button {
+    background-color: blue;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    border: 1px solid black;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: rgb(166, 167, 168);
+}
+
+.book_shelf  h2 {
+    color: blue;
+}
+
+.book_shelf  .book_list {
+    padding: 16px;
+}
+
+.book_shelf  .book_list  .book_item {
+    padding: 8px 16px 16px 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.book_shelf  .book_list .book_item  h3, p {
+    margin: 8px 0;
+}
+.book_shelf  .book_list .book_item button{
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.book_shelf .book_list .book_item .green{
+    background-color: darkgreen;
+    color: white;
+}
+.book_shelf .book_list .book_item .red{
+    background-color: darkred;
+    color: white;
+}
+.book_shelf .book_list .book_item .yellow{
+    background-color: darkgoldenrod;
+    color: white;
+}
+
+.select_item:hover{
+    background-color: cornflowerblue;
+    color: aliceblue;
+} 
