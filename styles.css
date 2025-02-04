@@ -57,6 +57,7 @@ main {
   width: 100%;
   padding: 5px;
   cursor: pointer;
+  margin-top: 5px;
 }
 
 /* Book shelf styles */
@@ -131,7 +132,6 @@ footer {
 }
 footer .credits {
   font-size: 0.8rem;
-  color: white;
 }
 
 footer .credits a {
