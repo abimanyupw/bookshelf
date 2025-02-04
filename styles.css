@@ -1,172 +1,252 @@
+/* Default styles (for larger screens) */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: rgb(247, 187, 108);
 }
 
-
-header{
-    background-color:rgb(240, 0, 0);
-    color: white;
-    padding: 20px;
-    text-align: center; 
+header {
+  background-color: rgb(25, 0, 255);
+  color: white;
+  padding: 20px;
+  text-align: center;
 }
 
 main {
-    max-width: 800px;
-    width: 80%;
-    margin: 0 auto;
-    padding: 16px;
-
-}
-.inputbook{
-    display: flex;
-    flex-direction: column;
-    padding: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgb(166, 167, 168);
+  max-width: 800px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px;
 }
 
-.inputbook h2 {
-    text-align: center;
-    color: rgb(240, 0, 0);
-}
-
-.inputbook form .input {
-    margin: 8px 0;
-}
-
-.inputbook form button {
-    background-color: rgb(240, 0, 0);
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    display: block;
-    width: 100%;
-    padding: 8px;
-    cursor: pointer;
-}
-
-.inputbook form  button  span {
-    font-weight: bold;
-}
-
-.inputbook form  .input  input {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-}
-
-.inputbook form  .input  label {
-    color: rgb(240, 0, 0);
-    font-weight: bold;
-}
-
-.inputbook form  .input_inline {
-    margin: 12px 0;
-    display: flex;
-    align-items: center;
-}
-
-.input_section > form > .input_inline > label {
-    color: rgb(240, 0, 0);
-    font-weight: bold;
-    margin-right: 10px;
-}
-
+/* Form and search styles */
+.inputbook,
 .search_section {
-    margin: 16px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 16px;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: rgb(166, 167, 168);
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: rgb(166, 167, 168);
+  margin-top: 10px;
 }
 
-.search_section > h2 {
-    color: rgb(240, 0, 0);
+.inputbook h2,
+.search_section > h2,
+.book_shelf h2 {
+  text-align: center;
+  color: rgb(25, 0, 255);
 }
 
+.inputbook form .input,
 .search_section > form {
-    padding: 16px;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr 0.5fr;
-    grid-gap: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
 }
 
-.search_section > form > label {
-    display: flex;
-    align-items: center;
-}
-
-.search_section > form > input {
-    padding: 5px;
-    border-radius: 5px;
-}
-
+.inputbook form button,
 .search_section > form > button {
-    background-color: rgb(240, 0, 0);
-    color: white;
-    border: 0;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: rgb(25, 0, 255);
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
 }
 
+/* Book shelf styles */
 .book_shelf {
-    margin: 16px 0 0 0;
-    border: 1px solid black;
+  margin: 16px 0 0 0;
+  border: 1px solid black;
+  padding: 16px;
+  border-radius: 10px;
+  background-color: rgb(166, 167, 168);
+}
+
+.book_shelf .book_list .book_item {
+  align-items: center;
+  padding: 8px 16px;
+  border: 1px solid black;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.book_shelf .book_list .book_item img {
+  width: 100px;
+  height: auto;
+  margin-right: 15px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.book_shelf .book_list .book_item h3,
+.book_shelf .book_list .book_item p {
+  margin: 8px 0;
+}
+
+/* Button styles for different actions */
+.book_shelf .book_list .book_item .green {
+  background-color: darkgreen;
+  color: white;
+  margin: 8px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.book_shelf .book_list .book_item .red {
+  background-color: darkred;
+  color: white;
+  margin: 8px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.book_shelf .book_list .book_item .yellow {
+  background-color: darkgoldenrod;
+  color: white;
+  margin: 8px;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Hover effects for items */
+.select_item:hover {
+  background-color: cornflowerblue;
+  color: aliceblue;
+}
+
+/* footer */
+
+footer {
+  background-color: rgb(25, 0, 255);
+  text-align: center;
+  padding: 1rem 0 3rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+footer .credits {
+  font-size: 0.8rem;
+}
+
+footer .credits a {
+  color: white;
+  font-weight: 700;
+}
+
+/* Media Queries for responsiveness */
+
+/* Small screen sizes (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  /* Make book item layout stack vertically on smaller screens */
+  .book_shelf .book_list .book_item {
+    flex-direction: column;
+    align-items: flex-start;
     padding: 16px;
-    border-radius: 10px;
-    background-color: rgb(166, 167, 168);
+  }
+
+  .book_shelf .book_list .book_item img {
+    margin-right: 0;
+    margin-bottom: 10px; /* Space between image and text */
+    width: 80%; /* Make image smaller */
+  }
+
+  .search_section > form {
+    grid-template-columns: 1fr 1fr; /* Two equal columns on mobile */
+  }
+
+  .inputbook form .input_inline {
+    flex-direction: column; /* Stack inputs vertically on mobile */
+  }
+
+  /* Adjust input widths */
+  .inputbook form .input input {
+    width: 100%;
+  }
 }
 
-.book_shelf  h2 {
-    color: rgb(240, 0, 0);
+/* Medium screen sizes (min-width: 768px and max-width: 1024px) */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .book_shelf .book_list .book_item {
+    flex-direction: row;
+  }
+
+  .book_shelf .book_list .book_item img {
+    width: 120px;
+    margin-right: 20px;
+  }
+
+  .search_section > form {
+    grid-template-columns: 1fr 2fr 1fr; /* Adjust column layout for tablet view */
+  }
+
+  .inputbook form .input_inline {
+    flex-direction: row; /* Align inputs inline on medium-sized screens */
+  }
 }
 
-.book_shelf  .book_list {
+/* Larger screen sizes (above 1024px) */
+@media screen and (min-width: 1024px) {
+  .book_shelf .book_list .book_item {
+    flex-direction: row;
     padding: 16px;
+  }
+
+  .book_shelf .book_list .book_item img {
+    width: 150px;
+    margin-right: 20px;
+  }
 }
 
-.book_shelf  .book_list  .book_item {
-    padding: 8px 16px 16px 16px;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px 0;
-}
+/* Small screen sizes (max-width: 450px) */
+@media screen and (max-width: 450px) {
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
 
-.book_shelf  .book_list .book_item  h3, p {
-    margin: 8px 0;
-}
-.book_shelf  .book_list .book_item button{
-    padding: 8px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+  .search_section,
+  .inputbook,
+  .book_shelf {
+    width: 100%; /* Make sections fill the full width of the screen */
+    padding: 10px; /* Reduce padding to avoid overflow */
+    box-sizing: border-box; /* Ensure padding doesn't add extra width */
+    margin-top: 1rem;
+  }
 
-.book_shelf .book_list .book_item .green{
-    background-color: darkgreen;
-    color: white;
-}
-.book_shelf .book_list .book_item .red{
-    background-color: darkred;
-    color: white;
-}
-.book_shelf .book_list .book_item .yellow{
-    background-color: darkgoldenrod;
-    color: white;
-}
+  .search_section > form {
+    display: grid;
+    grid-template-columns: 1fr; /* Stack inputs vertically */
+    grid-gap: 10px;
+  }
 
-.select_item:hover{
-    background-color: cornflowerblue;
-    color: aliceblue;
-} 
+  .inputbook form .input_inline {
+    flex-direction: column; /* Stack inline inputs vertically */
+  }
+
+  .inputbook form .input input,
+  .search_section > form input,
+  .search_section > form button {
+    width: 100%; /* Make inputs and buttons fill the screen */
+  }
+
+  .book_shelf .book_list .book_item {
+    flex-direction: column; /* Stack book item layout vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .book_shelf .book_list .book_item img {
+    width: 100%; /* Adjust image width to fit smaller screens */
+    margin-right: 0;
+    margin-bottom: 10px; /* Space between image and text */
+  }
+
+  .book_shelf .book_list .book_item h3,
+  .book_shelf .book_list .book_item p {
+    margin: 5px 0; /* Reduce margins for smaller screens */
+  }
+}
